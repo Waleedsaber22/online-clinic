@@ -78,6 +78,7 @@ status 500 refer to internal server error,
 
 const checkUserName = (uname, setValidState) => {
   // setValidState("error");
+  /*------------------------------------------------- check username request ----------------------------------------------------------- */
   axios
     .get(`http://localhost:5000/chkuname/${uname}`)
     .then(() => {
@@ -119,9 +120,11 @@ function Signup() {
           values?.staffType == "doctor"
             ? values?.specialtyDoctor
             : values?.specialtyNurse;
-      values["images"] = imageUrls;
+      values.birth = values?.birth?.format("YYYY-MM-DD");
+      values.images = imageUrls?.[0];
       values.moreInf = formValues.moreInf;
       console.log(values);
+      /*------------------------------------------------- adduser request ----------------------------------------------------------- */
       axios
         .post(
           "http://localhost:5000/adduser",
@@ -180,7 +183,6 @@ function Signup() {
       checkUserName(changedVal.username, setValidState);
     } else if (changedVal?.username === "" || !chk) setValidState("");
     setFormValues({ ...formValues, ...values });
-    console.log(values);
   };
 
   return (
@@ -449,7 +451,7 @@ function Signup() {
               name="email"
               rules={[
                 {
-                  required: true,
+                  required: false,
                   message: "you must write your email!",
                 },
                 {
@@ -476,7 +478,7 @@ function Signup() {
               accept=".png, .jpg, .jpeg, .bpm"
               listType="picture"
               multiple={false}
-              maxCount={5}
+              maxCount={1}
             >
               <p className="ant-upload-drag-icon">
                 <InboxOutlined />

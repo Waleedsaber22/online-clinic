@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Layout } from "antd";
+import { Link, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Login from "./Sign/Login";
+import Signup from "./Sign/Signup";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className="App min-h-screen">
+      <div className="flex justify-center gap-2">
+        <Link
+          to="/signup"
+          className="!text-white bg-gray-700 p-2 rounded border"
         >
-          Learn React
-        </a>
-      </header>
+          Sign Up
+        </Link>
+        <Link
+          to="/login"
+          className="!text-white bg-gray-700 p-2 rounded border"
+        >
+          Login
+        </Link>
+      </div>
+      <div
+        className="flex flex-col"
+        style={{ minHeight: "calc(100vh - 40px)" }}
+      >
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
+      </div>
     </div>
   );
 }

@@ -24,6 +24,7 @@ const signing = (
   fetchUserData
 ) => {
   messageApi.open(getMessage(1, "loading", "verfying..."));
+  /*------------------------------------------------- login request ----------------------------------------------------------- */
   axios
     .post(
       `http://localhost:5000/login`,
@@ -38,13 +39,13 @@ const signing = (
       }
     )
     .then(({ data }) => {
-      const cookies = new Cookies();
+      // const cookies = new Cookies();
       console.log(data);
-      const userid = data?.data?.user_id;
+      // const userid = data?.data?.user_id;
       messageApi.open(getMessage(1, "success", "login successfully", 2));
       setTimeout(() => {
         navigate(`/`);
-        fetchUserData(true, cookies.get("accessToken"));
+        // fetchUserData(true, cookies.get("accessToken"));
       }, 2000);
     })
     .catch((err) => {
