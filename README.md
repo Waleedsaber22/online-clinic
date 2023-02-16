@@ -1,13 +1,16 @@
 # Getting Started with ONLINE CLINIC APP
 
-This project developed with tailwindcss, antd design to create some components
+This project developed with tailwindcss framework and antd design to create some components
 
 ## Notes
 
-at project directory
+follow these steps to successfully run your web app
 
-1. write npm install to install modules
-2. there's antd file in project directory move it to (node_modules\antd\dist)
+### install modules
+
+In the project directory, you can write:
+
+#### `npm install`
 
 ### start running
 
@@ -15,4 +18,4 @@ In the project directory, you can run:
 
 #### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.

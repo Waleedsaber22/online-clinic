@@ -20,11 +20,11 @@ import {
 } from "@ant-design/icons";
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
-import { suffixSelector, prefixSelector } from "../utils";
+import { suffixSelector, prefixSelector } from "./signupUtils/utils";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import UserType from "./UserType";
-import HeaderLine from "./HeaderLine";
+import UserType from "./signupUtils/UserType";
+import HeaderLine from "./signupUtils/HeaderLine";
 const { Option } = Select;
 
 const getMessage = (key, type, content, duration) => ({

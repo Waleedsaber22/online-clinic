@@ -2,7 +2,7 @@ import React from "react";
 import { Checkbox, Button, Form, Input } from "antd";
 import { LockOutlined, UserOutlined } from "@ant-design/icons";
 import { useMediaQuery } from "react-responsive";
-import HeaderLine from "./HeaderLine";
+import HeaderLine from "./signupUtils/HeaderLine";
 import { useState } from "react";
 import { message } from "antd";
 import axios from "axios";
