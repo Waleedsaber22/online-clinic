@@ -4,11 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#fff4e4",
+        primary: "#f0f2f5",
         secondary: "#00f6ff",
         mainBlue: "#083464",
-        dimWhite: "rgba(255, 255, 255, 0.7)",
-        dimBlue: "rgba(9, 151, 124, 0.1)",
+        widgetBlue: "#384c6c",
       },
       fontFamily: {
         segoe: ["segoe ui", "sans-serif"],

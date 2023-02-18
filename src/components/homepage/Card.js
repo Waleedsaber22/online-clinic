@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = () => {
   return (
-    <div className="card-container bg-green-200">
+    <div className="card-container">
       <div className="card">
         <div className="text-center space-y-2 sm:text-left">
           <div className="space-y-0.5">

@@ -22,7 +22,7 @@
 }
 
 .hero-card {
-  @apply py-8 px-8 max-w-sm mx-8 my-8 bg-black rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 overflow-hidden;
+  @apply py-8 px-8 max-w-sm mx-8 my-8 bg-widgetBlue rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 overflow-hidden;
 }
 
 .hero-btn {
@@ -47,7 +47,7 @@
 }
 
 .card {
-  @apply py-8 px-8 max-w-sm mx-8 my-8 bg-black rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 overflow-hidden;
+  @apply py-8 px-8 max-w-sm mx-8 my-8 bg-widgetBlue rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 overflow-hidden;
 }
 
 .card-p {

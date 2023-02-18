@@ -1,4 +1,6 @@
 import React from "react";
+import Dropdown from "./Dropdown";
+import SearchBar from "./SearchBar";
 
 const Hero = () => {
   return (
@@ -25,10 +27,16 @@ const Hero = () => {
           <div className="search-container">
             <div className="specialty-container">
               <p className="text-slate-200 font-medium">Select Specialty</p>
+              <div>
+                <Dropdown />
+              </div>
             </div>
-            
+
             <div className="name-container">
               <p className="text-slate-200 font-medium">Search by Name</p>
+              <div>
+                <SearchBar />
+              </div>
             </div>
           </div>
           <button className="hero-btn">Search</button>
