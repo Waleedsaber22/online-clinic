@@ -2,6 +2,8 @@ import { Layout } from "antd";
 import { Link, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Login, Signup, UserProfile } from "./components";
+import Homepage from "./components/homepage/Homepage";
+
 function App() {
   return (
     <div className="App min-h-screen">
@@ -25,6 +27,9 @@ function App() {
         >
           Profile
         </Link>
+        <Link to="/home" className="!text-white bg-gray-700 p-2 rounded border">
+          Homepage
+        </Link>
       </div>
       {/*================================ pages ============================= */}
       <div
@@ -37,6 +42,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/profile/:profileid" element={<UserProfile />} />
+          <Route path="/home" element={<Homepage />} />
         </Routes>
       </div>
       {/*=============================== footer ============================== */}

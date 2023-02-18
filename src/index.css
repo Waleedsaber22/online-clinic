@@ -1,3 +1,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  @apply font-segoe;
+}
+
+/* Navigation Bar*/
+
+.nav-item {
+  @apply block py-2 pl-3 pr-4 text-white rounded md:hover:underline md:p-0;
+}
+
+.nav-button {
+  @apply inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden;
+}
+
+/*Hero*/
+.hero-container {
+  @apply flex flex-col justify-around align-middle py-8 bg-primary sm:flex-row sm:align-middle sm:justify-items-center;
+}
+
+.hero-card {
+  @apply py-8 px-8 max-w-sm mx-8 my-8 bg-black rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 overflow-hidden;
+}
+
+.hero-btn {
+  @apply bg-white px-6 py-2 mx-auto text-sm text-mainBlue font-semibold rounded-full border border-mainBlue hover:text-white hover:bg-mainBlue hover:border-transparent focus:outline-none focus:ring-2 focus:ring-mainBlue focus:ring-offset-2;
+}
+
+.search-container {
+  @apply flex flex-col justify-around sm:flex-row;
+}
+
+.specialty-container {
+  @apply mx-4 my-2;
+}
+
+.name-container {
+  @apply mx-4 my-2;
+}
+
+/* Cards*/
+.card-container {
+  @apply flex flex-col justify-around py-8 bg-primary sm:flex-row;
+}
+
+.card {
+  @apply py-8 px-8 max-w-sm mx-8 my-8 bg-black rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 overflow-hidden;
+}
+
+.card-p {
+  @apply text-slate-200 font-medium;
+}
+
+/*Footer*/
+
+.footer {
+  @apply p-4 bg-mainBlue shadow md:flex md:items-center md:justify-between md:p-6;
+}
