@@ -1,8 +1,7 @@
 import { Layout } from "antd";
 import { Link, Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Login, Signup, UserProfile } from "./components";
-import Homepage from "./components/homepage/Homepage";
+import { Login, Signup, UserProfile,Homepage } from "./components";
 
 function App() {
   return (
