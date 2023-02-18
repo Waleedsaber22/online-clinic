@@ -35,7 +35,7 @@ const Hero = () => {
             <div className="name-container">
               <p className="text-slate-200 font-medium">Search by Name</p>
               <div>
-                <SearchBar />
+                <SearchBar placeholder="Enter Physician's Name" />
               </div>
             </div>
           </div>
