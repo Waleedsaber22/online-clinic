@@ -6,8 +6,8 @@ const Card = () => {
       <div className="card">
         <div className="text-center space-y-2 sm:text-left">
           <div className="space-y-0.5">
-            <p className="text-lg text-white font-semibold">Messaging</p>
-            <p className="card-p">
+            <h3 className="header-text">Messaging</h3>
+            <p className="p-text">
               A modern messaging experience letting patients know their care
               team is only a few clicks away, providing a good patient-physician
               communication experience.
@@ -19,8 +19,8 @@ const Card = () => {
       <div className="card">
         <div className="text-center space-y-2 sm:text-left">
           <div className="space-y-0.5">
-            <p className="text-lg text-white font-semibold">Scheduling</p>
-            <p className="card-p">
+            <h3 className="header-text">Scheduling</h3>
+            <p className="p-text">
               The advanced collaborative tool for clinic doctors to arrange
               appointments, manage upcoming tasks and coordinate internally.
             </p>
@@ -31,8 +31,8 @@ const Card = () => {
       <div className="card">
         <div className="text-center space-y-2 sm:text-left">
           <div className="space-y-0.5">
-            <p className="text-lg text-white font-semibold">Reviews</p>
-            <p className="card-p">
+            <h3 className="header-text">Reviews</h3>
+            <p className="p-text">
               Each patient has ability to give feedback or review their doctors
               according to their experience.
             </p>

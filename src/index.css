@@ -6,23 +6,31 @@
   @apply font-segoe;
 }
 
-/* Navigation Bar*/
+.header-text {
+  @apply text-white text-lg font-semibold;
+}
+
+.p-text {
+  @apply text-slate-200 font-medium;
+}
+/*---Navigation Bar---*/
 
 .nav-item {
-  @apply block py-2 pl-3 pr-4 text-white rounded md:hover:underline md:p-0;
+  @apply block py-2 pl-3 pr-4 text-white rounded md:hover:underline md:p-0 hover:text-white;
 }
 
 .nav-button {
   @apply inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden;
 }
 
-/*Hero*/
+/*---Hero---*/
+
 .hero-container {
   @apply flex flex-col justify-around align-middle py-8 bg-primary sm:flex-row sm:align-middle sm:justify-items-center;
 }
 
 .hero-card {
-  @apply py-8 px-8 max-w-sm mx-8 my-8 bg-widgetBlue rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 overflow-hidden;
+  @apply py-8 px-8 max-w-md mx-8 my-8 bg-widgetBlue rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 overflow-hidden;
 }
 
 .hero-btn {
@@ -41,7 +49,8 @@
   @apply mx-4 my-2;
 }
 
-/* Cards*/
+/*---Cards---*/
+
 .card-container {
   @apply flex flex-col justify-around py-8 bg-primary sm:flex-row;
 }
@@ -50,11 +59,17 @@
   @apply py-8 px-8 max-w-sm mx-8 my-8 bg-widgetBlue rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 overflow-hidden;
 }
 
-.card-p {
-  @apply text-slate-200 font-medium;
+/*---Services Section---*/
+
+.services-main-container {
+  @apply bg-primary flex flex-col align-middle justify-center px-10;
 }
 
-/*Footer*/
+.services-secondary-container {
+  @apply my-3 md:flex md:gap-12;
+}
+
+/*---Footer---*/
 
 .footer {
   @apply p-4 bg-mainBlue shadow md:flex md:items-center md:justify-between md:p-6;

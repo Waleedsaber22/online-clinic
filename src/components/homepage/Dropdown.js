@@ -1,9 +1,15 @@
 import React from "react";
 
-const Dropdown = () => {
-  return (<div>
-    <input></input>
-  </div>);
+const Dropdown = ({ placeholder }) => {
+  return (
+    <div>
+      <input
+        className="text-black outline-none pl-1"
+        type="text"
+        placeholder={placeholder}
+      ></input>
+    </div>
+  );
 };
 
 export default Dropdown;

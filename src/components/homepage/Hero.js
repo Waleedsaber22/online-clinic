@@ -8,10 +8,10 @@ const Hero = () => {
       <div className="hero-card">
         <div className="text-center space-y-2 sm:text-left">
           <div className="space-y-0.5">
-            <p className="text-white text-lg font-semibold">
+            <h3 className="header-text">
               For Better Healthcare & Healthier Life
-            </p>
-            <p className="card-p">
+            </h3>
+            <p className="p-text">
               You Can book Your Appointment Now or chat with your Doctor for any
               questions or concerns
             </p>
@@ -19,16 +19,14 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="hero-card">
-        <div className="text-center space-y-2 sm:text-left flex flex-col align-middle">
-          <p className="text-lg text-white font-semibold text-center">
-            Book Appointment
-          </p>
+      <div className="bg-widgetBlue py-8 px-8 max-w-md mx-8 my-8 rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 overflow-hidden">
+        <div className="text-center flex flex-col align-middle justify-center">
+          <h3 className="header-text">Book Appointment</h3>
           <div className="search-container">
-            <div className="specialty-container">
+            <div className="mx-4 my-2 flex flex-col align-middle">
               <p className="text-slate-200 font-medium">Select Specialty</p>
               <div>
-                <Dropdown />
+                <Dropdown placeholder="Select Specialty" />
               </div>
             </div>
 
